@@ -5,7 +5,9 @@ fun main(){
     //print(retornaPar(2))
     //imprimeImpares()
     //print(comparaQuatroNumeros(23,15,13,9))
-    imprimePositivos()
+    //imprimePositivos()
+    //imprimeImparPositivoComRange(100, 10)
+    print(stringSize("HelllllloooooooWorlddddddddddddddd"))
 }
 
 
@@ -49,6 +51,19 @@ fun imprimeImpares(){
     }
 }
 
+fun imprimeImparPositivoComRange(numInicial: Int, quant :Int){
+   var numerosImpares :Int = 0
+   var numInicio :Int = numInicial
+
+   while(numerosImpares < quant){
+       if(numInicio % 2 != 0 && numInicio > 0){
+           println(numInicio)
+           numerosImpares++
+       }
+       numInicio++
+   }
+}
+
 
 //Escrever um código que deve analisar quatro números inteiros e,
 // caso numA seja maior que numC e numD ou caso numB seja maior que numC e numD,
@@ -61,8 +76,14 @@ fun comparaQuatroNumeros(numA :Int, numB : Int, numC: Int, numD : Int): Boolean 
 //Escrever um programa que exiba os primeiros 100 números positivos.
 fun imprimePositivos(){
     for(num in 0..200){
-        if(num %2 == 0){
+        if(num % 2 == 0){
             println(num)
         }
     }
+}
+
+
+//Retornar o numero de letras em uma palavra
+fun stringSize(txt :String):Int{
+    return txt.length
 }
