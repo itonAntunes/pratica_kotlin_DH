@@ -65,6 +65,7 @@ fun imprimeImparPositivoComRange(numInicial: Int, quant :Int){
 }
 
 
+
 //Escrever um código que deve analisar quatro números inteiros e,
 // caso numA seja maior que numC e numD ou caso numB seja maior que numC e numD,
 // retornar true, caso contrário, retornar false.
