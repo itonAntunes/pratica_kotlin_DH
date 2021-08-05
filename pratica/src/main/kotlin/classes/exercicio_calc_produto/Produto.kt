@@ -1,4 +1,4 @@
-package classes
+package classes.exercicio_calc_produto
 
 class Produto(var numeros: List<Int>){
 

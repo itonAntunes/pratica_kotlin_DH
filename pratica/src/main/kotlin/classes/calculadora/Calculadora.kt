@@ -1,4 +1,4 @@
-package classes
+package classes.calculadora
 
 class Calculadora(var num1: Int, var num2: Int) {
 
@@ -7,22 +7,22 @@ class Calculadora(var num1: Int, var num2: Int) {
 
     var resultado = 0
 
-    fun soma():Calculadora {
+    fun soma(): Calculadora {
         resultado = num1 + num2
         return this
     }
 
-    fun subtracao():Calculadora {
+    fun subtracao(): Calculadora {
         resultado = num1 - num2
         return this
     }
 
-    fun multiplicacao():Calculadora {
+    fun multiplicacao(): Calculadora {
         resultado = num1 * num2
         return this
     }
 
-    fun dividao():Calculadora {
+    fun dividao(): Calculadora {
         if(num1 == 0 || num2 == 0){
             resultado = 0
             return this

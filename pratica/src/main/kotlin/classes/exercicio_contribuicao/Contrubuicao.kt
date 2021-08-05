@@ -1,4 +1,4 @@
-package classes
+package classes.exercicio_contribuicao
 
 class Contrubuicao(var idade: Int, var sexo: Char, var tempoContribuicao: Int){
 
