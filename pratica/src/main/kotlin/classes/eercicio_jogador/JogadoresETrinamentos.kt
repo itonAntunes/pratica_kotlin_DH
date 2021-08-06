@@ -7,5 +7,8 @@ fun main() {
     var treinamento = SessaoDeTreinamento(pele.experiencia).treinarA(pele)
     var treinamento2 = SessaoDeTreinamento(maradona.experiencia).treinarA(maradona)
 
+    pele.status()
+    maradona.status()
+
 
 }

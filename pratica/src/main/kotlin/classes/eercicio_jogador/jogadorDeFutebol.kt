@@ -1,23 +1,34 @@
 package classes
 
 class JogadorDeFutebol(
-    var nome :String,
-    var energia: Int,
-    var alegria :Int,
-    var gols: Int,
-    var experiencia: Int ){
+    val nome :String,
+    var energia: Int = 0,
+    var alegria :Int = 0,
+    var gols: Int = 0,
+    var experiencia: Int = 0 ){
 
 
     fun fazerGols(){
-        energia = energia - 5
-        alegria = alegria + 10
-        gols = gols + 1
-        println("GOOOOOOOL!")
+        energia -= 5
+        alegria += 10
+        gols += 1
+        println("GOOOOOOOL! do $nome")
     }
 
     fun correr(){
-        energia = energia - 10
+        energia -= 10
         println("Cansei")
+    }
+
+
+    fun status(){
+        println("""
+            Jogador: $nome
+            Energia: $energia
+            Alegria: $alegria
+            Gols:    $gols
+            Experiencia: $experiencia
+        """.trimIndent())
     }
 }
 

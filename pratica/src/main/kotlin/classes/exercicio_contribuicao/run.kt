@@ -1,5 +1,5 @@
-package classes
-import classes.exercicio_contribuicao.Contrubuicao
+package classes.exercicio_contribuicao
+
 
 fun main() {
 
