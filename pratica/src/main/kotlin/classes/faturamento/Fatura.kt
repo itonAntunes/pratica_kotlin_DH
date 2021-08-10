@@ -5,7 +5,7 @@ class Fatura(var itens :List<Item>) {
 
     fun totalDaFatura(): Double{
         for(item in itens){
-            total = item.quantidade * item.preco
+            total += item.quantidade * item.preco
         }
         return total
     }
